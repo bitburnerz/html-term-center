@@ -92,6 +92,7 @@ pre {
 
 .Header,
 .green {
+  border: 0px;
   background: var(--gray);
   text-align: left;
   color: var(--black);
