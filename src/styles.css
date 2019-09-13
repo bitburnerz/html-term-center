@@ -1,0 +1,138 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Lucida Console", "Lucida Sans Typewriter", monaco,
+    "Bitstream Vera Sans Mono", monospace;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+h3 {
+  font-family: "Lucida Console", "Lucida Sans Typewriter", monaco,
+    "Bitstream Vera Sans Mono", monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+}
+p {
+  font-family: "Lucida Console", "Lucida Sans Typewriter", monaco,
+    "Bitstream Vera Sans Mono", monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+blockquote {
+  font-family: "Lucida Console", "Lucida Sans Typewriter", monaco,
+    "Bitstream Vera Sans Mono", monospace;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+pre {
+  font-family: "Lucida Console", "Lucida Sans Typewriter", monaco,
+    "Bitstream Vera Sans Mono", monospace;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--gray);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--silver);
+}
+::-webkit-resizer {
+  background: var(--gray);
+}
+/* Handle on hover */
+::-webkit-scrollbar-corner {
+  background: var(--gray);
+}
+
+#root {
+  background-color: var(--black);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.App {
+  display: flex;
+
+  flex-wrap: wrap;
+  border-style: solid;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.Window {
+  margin: 35px;
+  border-style: solid;
+  border-color: var(--gray);
+}
+
+.Header,
+.green {
+  background: var(--gray);
+  text-align: left;
+  color: var(--black);
+  border-bottom-style: solid;
+}
+.Content {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  resize: both;
+  text-align: left;
+  color: var(--aqua);
+}
+.updateBullet {
+  line-height: 0.1em;
+  font-size: 0.75em;
+  color: var(--gray);
+}
+.alarm {
+  color: var(--my-red);
+}
+
+.logItem {
+  line-height: 0.9em;
+}
+
+.RadarIcon {
+  fill: var(--green);
+  animation: color_change 0.5s infinite alternate;
+}
+
+@keyframes color_change {
+  20% {
+    fill: var(--red);
+  }
+}
+.RadarIcon:hover {
+  background-color: #3e8e41;
+}
+
+.RadarIcon:active {
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(10px);
+}
